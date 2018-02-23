@@ -1,0 +1,135 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* UTILS */
+.clickable {
+    cursor: pointer;
+}
+
+/*Loader / Hiding unstyled content*/
+#content-ready {
+    display: none;
+}
+
+/* BACKGROUND (MOUNTAINS) */
+.this-background-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.this-background {
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/tlo.png");
+    background-repeat: repeat-x;
+    background-size: auto 60vh;
+    background-position: bottom;
+}
+
+/* CHARACTERS (POLA & NORBERT) */
+.this-main-character-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.this-main-character {
+    position: absolute;
+    bottom: 0;
+    height: 65%;
+    transform: translateX(-50%);
+    left: 50%
+}
+
+@media (max-width: 400px) {
+    .this-main-character {
+        height: 60%;
+    }
+}
+
+/* DESKTOP VERSION (horizontal) */
+.this-left-side-wrapper-desktop {
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.this-left-side-images-wrapper-desktop {
+    display: flex;
+    background: red;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.this-fb-desktop {
+    background: red;
+    width: 5vw;
+    margin-right: 2vw;
+}
+
+.this-maps-desktop {
+    background: red;
+    width: 5vw;
+}
+
+.this-text-wrapper-desktop {
+    margin: 0 2vw 0 2vw;
+}
+
+.this-text-desktop {
+    width: 50vw;
+}
+
+.this-google-desktop {
+    width: 15vw;
+    background: red;
+}
+
+/* MOBILE VERSION (vertical) */
+.this-text-wrapper-mobile {
+    position: relative;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.this-text-mobile {
+    width: 70vw;
+}
+
+.this-images-wrapper-mobile {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.this-fb-mobile {
+    width: 10vw;
+    background: green;
+}
+
+.this-google-wrapper-mobile {
+    margin: 0 20px 0 20px;
+}
+
+.this-google-mobile {
+    width: 50vw;
+    background: green;
+}
+
+.this-maps-mobile {
+    width: 10vw;
+    background: green;
+}
